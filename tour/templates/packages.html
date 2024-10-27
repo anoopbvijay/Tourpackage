@@ -1,0 +1,84 @@
+{% extends 'home.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Package Details{% endblock %}</title>
+{% load static %}
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+
+</head>
+<body>
+{% block content %}
+
+    <section>
+        <div class="container">
+            <div class="row text-center">
+        <section id="services" class="container">
+        <h4>Our Packages</h4>
+        <div class="services-grid">
+
+            <div class="service-item">
+                <img src="{% static 'images/image1.jpg' %}" alt="image1">
+                <h3>Spiritual Journey</h3>
+                <p>Journey to the spiritual heart of India in Varanasi</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/images2.jpg' %}" alt="images2">
+                <h3>Ooty</h3>
+                <p>Queen of Hill Stations</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image3.jpg' %}" alt="image3">
+                <h3>Jaisalmer Fort</h3>
+                <p>Jaisalmer, Where the Forts are still alive</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image4.jpg' %}" alt="image4">
+                <h3>Kashmir</h3>
+                <p>A piece of heaven on earth</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image5.jpg' %}" alt="image5">
+                <h3>Munnar</h3>
+                <p>The idyllic hill station.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image6.jpg' %}" alt="Image 6">
+                <h3>Desert Safari in Rajasthan</h3>
+                <p>Have a Glimpse of the Lordly State by Opting for Desert Safari in Rajasthan</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image7.jpg' %}" alt="image7">
+                <h3>Meenakshi Amman Temple in Madurai</h3>
+                <p>Lord Siva in his incarnation as Sundareswarar and his fish-eyed spouse, Meenakshi, are enshrined in this twin temple</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image8.jpg' %}" alt="iamage8">
+                <h3>Taj Mahal</h3>
+                <p>Taj Mahal - Crown of Palaces</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{% static 'images/image9.jpg' %}" alt="image 9">
+                <h3>Delhi</h3>
+                <p>To the capital of India</p>
+            </div>
+
+        </div>
+        </section>
+        </div>
+        </div>
+    </section>
+{% endblock %}
+</body>
+</html>

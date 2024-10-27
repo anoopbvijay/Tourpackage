@@ -1,0 +1,38 @@
+{% extends 'home.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Photo Gallery{% endblock %}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+{% block content %}
+    <h1>Photo Gallery</h1>
+    <h5>Here are some amazing photos from our tour packages:</h5>
+    <!-- Add photos here -->
+<div class="services-grid">
+    <div class="service-item"> <img src="{% static 'images/gallery1.jpg' %}" alt="gallery1"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery2.jpg' %}" alt="gallery2"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery3.jpg' %}" alt="gallery3"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery4.jpg' %}" alt="gallery4"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery5.jpg' %}" alt="gallery5"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery6.jpg' %}" alt="gallery6"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery7.jpg' %}" alt="gallery7"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery8.jpg' %}" alt="gallery8"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery9.jpg' %}" alt="gallery9"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery10.jpg' %}" alt="gallery10"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery11.jpg' %}" alt="gallery11"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery12.jpg' %}" alt="gallery12"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery13.jpg' %}" alt="gallery13"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery14.jpg' %}" alt="gallery14"></div>
+    <div class="service-item"> <img src="{% static 'images/gallery15.jpg' %}" alt="gallery15"></div>
+
+</div>
+{% endblock %}
+</body>
+</html>
