@@ -6,6 +6,15 @@
     <title>Browser Tour Packages</title>
     <style>
         body {
+            background-image: url('/static/images/tajmahal.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
@@ -28,7 +37,7 @@
         }
         a {
             text-decoration: none;
-            color: #4CAF50;
+            color: yellow;
         }
     </style>
 </head>
@@ -40,6 +49,7 @@
             <tr>
                 <th>Title</th>
                 <th>Destination</th>
+                <th>Image</th>
                 <th>Price</th>
                 <th>Duration</th>
                 <th>Actions</th>
@@ -50,12 +60,20 @@
             <tr>
                 <td>{{ package.title }}</td>
                 <td>{{ package.destination }}</td>
+                <td>
+                    {% if package.image %}
+            <img src="{{ package.image.url }}" alt="{{ package.name }}" width="200" height="150">
+        {% else %}
+            <p>No image uploaded for this package.</p>
+        {% endif %}
+                </td>
                 <td>${{ package.price }}</td>
                 <td>{{ package.duration }} days</td>
                 <td>
                     <a href="{% url 'package_detail' package.id %}">View Details</a> |
                     <a href="{% url 'book_package' package.id %}">Book Now</a>
                 </td>
+
             </tr>
             {% endfor %}
         </tbody>

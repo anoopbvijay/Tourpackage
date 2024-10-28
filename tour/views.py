@@ -30,6 +30,8 @@ def vendor_dashboard(request):
 def create_package(request):
     if request.method == 'POST':
         form = TourPackageForm(request.POST)
+        image = request.FILES.get('image')  # Get image from FILES
+
         if form.is_valid():
             package = form.save(commit=False)
             package.vendor = request.user  # Assign the current vendor to the package

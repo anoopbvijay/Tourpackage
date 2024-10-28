@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Contact Us{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
 {% block content %}
@@ -12,7 +14,8 @@
 <br>
 <br>
 <br>
-<br>
+<br><br><br><br><br>
+    <img src="{% static 'images/contact.jpg' %}" alt="contact">
     <p>For inquiries, please email us at: <strong>info@tourmanagement.com</strong></p>
     <p>Or call us at: <strong>+123 456 789</strong></p>
 {% endblock %}
